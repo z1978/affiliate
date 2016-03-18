@@ -1,0 +1,15 @@
+<Html>
+<Head>
+<Meta http-equiv="Content-Type"content="text/html; charset=UTF-8" >
+<Title>示例</Title>
+<script src="querystring.js"></script>
+</Head >
+<Body>
+<script>
+var newElement=document.createElement("div");//创建div对象
+var str="<u>"+Request["name"]+"</u>,欢迎光临!<br>您的E-mail是:<u>"+Request["email"]+"</u>";//利用实例["字段名称"]获取参数内容
+newElement.innerHTML=str;
+document.body.appendChild(newElement);//向文档添加div对象
+</script>
+</Body>
+</Html>

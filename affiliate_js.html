@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <!-- affiliate_js.html?name=rakuten&url=http://affiliate.rakuten.co.jp/-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="keywords" content="affiliate" />
+        <meta name="description" content="affiliate" />
+        <title>
+            affiliate
+        </title>
+        <script src="js/querystring.js">
+        </script>
+    </head>
+    
+    <body>
+		
+        <script type="text/javascript">
+            var newElement = document.createElement("div"); //创建div对象
+            var str = "<br> Affiliate for <a href='" + Request["url"] + "'target='_blank'>" + Request["name"] + "</a>"; //利用实例["字段名称"]获取参数内容
+            newElement.innerHTML = str;
+            document.body.appendChild(newElement); //向文档添加div对象
+        </script>
+    </body>
+
+</html>
